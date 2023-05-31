@@ -2,7 +2,7 @@ $color-background-primary: #262626;
 $color-background-secondary: #1e1e1e;
 $color-text-primary: #f4effa;
 $color-text-secondary: #532b88;
-$color-text-special: #c8b1e4;
+$color-text-links: #9b72cf;
 $font-base: Helvetica, sans-serif;
 $font-special: Georgia;
 $regular-text: 24px;
@@ -19,4 +19,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: $regular-text;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
 }
