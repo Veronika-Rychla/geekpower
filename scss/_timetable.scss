@@ -1,0 +1,24 @@
+@use 'base';
+
+.timetable {
+  padding: 15px;
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.timetable__days {
+  background-color: base.$color-text-secondary;
+}
+
+.timetable__hours {
+  background-color: base.$color-text-links;
+}
+
+.timetable__slot {
+  background-color: green;
+}
+
+.timetable__slot--taken {
+  background-color: red;
+}
