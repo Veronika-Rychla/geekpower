@@ -5,9 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/scripts/scripts.js" defer></script>
     <title>{{ title }}</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <span class="brand__geek">Geek</span>
+          <span class="brand__power">Power</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a href="#journey" class="nav-link">IT English</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Study skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hire" class="nav-link">Hire me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
     {{ content | safe }}
+    <footer class="footer">@Geek Power</footer>
   </body>
 </html>
