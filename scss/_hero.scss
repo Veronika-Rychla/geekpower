@@ -1,0 +1,12 @@
+@use 'base';
+
+.hero-wrapper {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.hero__title {
+  text-align: center;
+}

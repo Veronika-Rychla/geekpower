@@ -112,4 +112,32 @@ header {
 .footer {
   background-color: #1e1e1e;
   padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #532b88;
+  box-shadow: rgba(122, 11, 141, 0.5);
+}
+
+.card__title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.card__text {
+  color: white;
+}
+
+.hero-wrapper {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.hero__title {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

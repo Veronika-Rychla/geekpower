@@ -1,0 +1,18 @@
+@use 'base';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid base.$color-text-secondary;
+  box-shadow: rgba(122, 11, 141, 0.5);
+}
+
+.card__title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.card__text {
+  color: white;
+}
