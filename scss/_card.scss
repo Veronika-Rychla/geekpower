@@ -22,6 +22,7 @@
 
 .card__text {
   color: white;
+  text-align: justify;
 }
 
 .card__image img {
@@ -36,10 +37,13 @@
 @media (min-width: 768px) {
   .card {
     flex-direction: row;
+    width: 60%;
+    padding: 40px;
   }
 
   .card__image {
-    width: 60%;
+    width: 70%;
+    padding-right: 30px;
   }
 
   .card__image img {

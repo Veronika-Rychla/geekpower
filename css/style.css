@@ -117,6 +117,12 @@ header {
 .footer {
   background-color: #1e1e1e;
   padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #9b72cf;
+  text-decoration: none;
 }
 
 .card {
@@ -141,6 +147,7 @@ header {
 
 .card__text {
   color: white;
+  text-align: justify;
 }
 
 .card__image img {
@@ -155,9 +162,12 @@ header {
 @media (min-width: 768px) {
   .card {
     flex-direction: row;
+    width: 60%;
+    padding: 40px;
   }
   .card__image {
-    width: 60%;
+    width: 70%;
+    padding-right: 30px;
   }
   .card__image img {
     width: 100%;
@@ -172,7 +182,21 @@ header {
 
 .hero__title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 36px;
+}
+
+.hero__subtitle {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  text-align: center;
+  padding: 60px;
+  font-style: italic;
+  font-size: 32px;
 }
 
 .hero__button {

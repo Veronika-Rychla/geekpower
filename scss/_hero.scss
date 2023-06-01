@@ -9,12 +9,26 @@
 
 .hero__title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 36px;
+}
+
+.hero__subtitle {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  text-align: center;
+  padding: 60px;
+  font-style: italic;
+  font-size: 32px;
 }
 
 .hero__button {
   padding: 1rem;
-  background-color: base.$color-text-secondary;
+  background-color: base.$color-buttons;
   border-radius: 30px;
   width: 90%;
   text-align: center;
@@ -24,7 +38,7 @@
     height: 100px;
     line-height: 25px;
     padding: 1rem;
-    background-color: base.$color-text-secondary;
+    background-color: base.$color-buttons;
     border-radius: 15px;
     text-align: center;
     align-self: center;

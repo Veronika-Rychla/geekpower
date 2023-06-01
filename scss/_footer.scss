@@ -3,4 +3,10 @@
 .footer {
   background-color: base.$color-background-secondary;
   padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: base.$color-text-links;
+  text-decoration: none;
 }
