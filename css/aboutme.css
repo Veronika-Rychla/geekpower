@@ -1,0 +1,15 @@
+.aboutme-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .aboutme-wrapper {
+    flex-direction: row;
+  }
+}
+
+.photo {
+  border: 2px solid red;
+  width: 500px;
+  height: 500px;
+}/*# sourceMappingURL=aboutme.css.map */

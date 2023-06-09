@@ -3,7 +3,30 @@ layout: main-template.njk
 title: Geek Power - Rezervace a ceník
 ---
 
-<h1>Rozvrh</h1>
+<h1 class="page-heading">Rezervace termínu a ceník</h1>
+
+<div class="price-card">
+  <p class="price-card__action">
+    Ulovte si výhodnou zaváděcí cenu až do konce roku!
+  </p>
+  <span class="price-card__price">🔥 500 Kč 🔥</span>
+  <ul class="price-card_list">
+    <p>Balíček zahrnuje:</p>
+    <li>50-minutovou konverzační lekci přímé výuky jednou týdně</li>
+    <li>slovíčka pro daný týden ve formátu pro SRS</li>
+    <li>výklad a interaktivní gramatická cvičení</li>
+    <li>doporučená videa k poslechu</li>
+    <li>feedback k psanému úkolu</li>
+    <li>užitečné study skills strategie</li>
+  </ul>
+  <p>
+    <a href="termsandconditions"
+      >Obchodní podmínky transparentně a srozumitelně</a
+    >
+  </p>
+</div>
+
+<h2>Přehled volných slotů</h2>
 
 <table class="timetable">
   <tr>
@@ -43,10 +66,10 @@ title: Geek Power - Rezervace a ceník
   </tr>
   <tr>
     <th class="timetable__hours">13:00</th>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--taken">lunch</td>
+    <td class="timetable__slot--taken">lunch</td>
+    <td class="timetable__slot--taken">lunch</td>
+    <td class="timetable__slot--taken">lunch</td>
   </tr>
   <tr>
     <th class="timetable__hours">14:00</th>
@@ -79,15 +102,30 @@ title: Geek Power - Rezervace a ceník
   <tr>
     <th class="timetable__hours">18:00</th>
     <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot">free</td>
   </tr>
   <tr>
     <th class="timetable__hours">19:00</th>
     <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
     <td class="timetable__slot--taken">X</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--taken">X</td>
+    <td class="timetable__slot--taken">X</td>
   </tr>
 </table>
+
+<h2>Rezervujte si první lekci přes Calendry</h2>
+
+<!-- Calendly inline widget begin -->
+<div
+  class="calendly-inline-widget"
+  data-url="https://calendly.com/geekpower/introductory-lesson?hide_event_type_details=1&background_color=1e1e1e&text_color=ffffff&primary_color=9b72cf"
+  style="min-width: 320px; height: 750px; margin: 0"
+></div>
+<script
+  type="text/javascript"
+  src="https://assets.calendly.com/assets/external/widget.js"
+  async
+></script>
+<!-- Calendly inline widget end -->

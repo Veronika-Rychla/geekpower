@@ -12,8 +12,37 @@ body {
 }
 
 h2 {
-  text-align: center;
-  font-size: 4rem;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.page-heading {
+  margin: 30px 20px;
+  text-align: left;
+  font-size: 2rem;
+}
+@media (min-width: 600px) {
+  .page-heading {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .page-heading {
+    font-size: 4rem;
+  }
 }
 
 header {
@@ -207,15 +236,28 @@ header {
   text-align: center;
   align-self: center;
 }
-.hero__button--action {
-  width: 300px;
-  height: 100px;
+
+.hero__button a {
+  text-decoration: none;
+  display: block;
+  color: #f4effa;
+}
+
+.guarantee__button {
+  width: 80%;
+  height: auto;
   line-height: 25px;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #532b88;
   border-radius: 15px;
   text-align: center;
   align-self: center;
+}
+
+.guarantee__button a {
+  text-decoration: none;
+  display: block;
+  color: #f4effa;
 }
 
 @media (min-width: 768px) {
@@ -229,11 +271,68 @@ header {
     width: 40%;
   }
 }
+/* PRICE CARD */
+.price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  background-color: #1e1e1e;
+  box-shadow: 3px 3px 1px 1px rgba(155, 114, 207, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+}
+@media (min-width: 600px) {
+  .price-card {
+    width: 70%;
+  }
+}
+@media (min-width: 1000px) {
+  .price-card {
+    width: 50%;
+  }
+}
+
+.price-card__price {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #532b88;
+  font-size: 2rem;
+}
+
+.price-card__list p {
+  padding: 20px;
+}
+
+.price-card__action {
+  font-size: 2rem;
+}
+
+.price-card a {
+  color: #9b72cf;
+  text-decoration: none;
+}
+
+/* TIMETABLE  */
 .timetable {
   padding: 15px;
   text-align: center;
   margin: 0 auto;
   width: 95%;
+}
+@media (min-width: 600px) {
+  .timetable {
+    width: 80%;
+  }
+}
+@media (min-width: 1000px) {
+  .timetable {
+    width: 50%;
+  }
 }
 
 .timetable__days {
@@ -250,4 +349,85 @@ header {
 
 .timetable__slot--taken {
   background-color: red;
+}
+
+.aboutme-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .aboutme-wrapper {
+    flex-direction: row;
+    margin: 40px auto;
+    width: 60%;
+  }
+}
+
+.aboutme-text {
+  flex-basis: 100%;
+}
+@media (min-width: 1000px) {
+  .aboutme-text {
+    flex-basis: 60%;
+  }
+}
+
+.aboutme-photo {
+  width: 90%;
+  height: 600px;
+}
+@media (min-width: 1000px) {
+  .aboutme-photo {
+    width: 500px;
+    height: 600px;
+    flex-basis: 40%;
+  }
+}
+
+.aboutme-photo1 {
+  background-image: url(/images/veronika.jpg);
+  width: 90%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 1000px) {
+  .aboutme-photo1 {
+    width: 500px;
+    height: 600px;
+    flex-basis: 40%;
+  }
+}
+
+.aboutme-photo2 {
+  background-image: url(/images/veronika_geek.jpg);
+  width: 90%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 1000px) {
+  .aboutme-photo2 {
+    width: 500px;
+    height: 600px;
+    flex-basis: 40%;
+  }
+}
+
+.czechitas-photo {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+@media (min-width: 1000px) {
+  .czechitas-photo {
+    max-width: 60%;
+  }
+}
+
+.photo {
+  width: 500px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

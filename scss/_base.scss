@@ -22,6 +22,31 @@ body {
 }
 
 h2 {
-  text-align: center;
-  font-size: 4rem;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 50px;
+
+  @media (min-width: 600px) {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 3rem;
+  }
+}
+
+.page-heading {
+  margin: 30px 20px;
+  text-align: left;
+  font-size: 2rem;
+
+  @media (min-width: 600px) {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 4rem;
+  }
 }
