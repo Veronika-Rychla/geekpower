@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1000px) {
+    align-items: center;
+  }
+}
+
+.contact__methods {
+  margin: 10px 0 10px 5px;
+
+  @media (min-width: 1000px) {
+    margin: 20px auto;
+  }
+}
+
+.contact__icon {
+  width: 50px;
+  width: 50px;
+  margin-right: 20px;
+}

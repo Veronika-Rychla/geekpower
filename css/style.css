@@ -354,6 +354,7 @@ header {
 .aboutme-wrapper {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 @media (min-width: 1000px) {
   .aboutme-wrapper {
@@ -363,9 +364,6 @@ header {
   }
 }
 
-.aboutme-text {
-  flex-basis: 100%;
-}
 @media (min-width: 1000px) {
   .aboutme-text {
     flex-basis: 60%;
@@ -373,46 +371,26 @@ header {
 }
 
 .aboutme-photo {
-  width: 90%;
-  height: 600px;
+  width: 95%;
+  height: auto;
+  margin: 20px auto;
 }
 @media (min-width: 1000px) {
   .aboutme-photo {
-    width: 500px;
-    height: 600px;
+    width: 40%;
+    height: auto;
     flex-basis: 40%;
   }
 }
 
-.aboutme-photo1 {
-  background-image: url(/images/veronika.jpg);
-  width: 90%;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-@media (min-width: 1000px) {
-  .aboutme-photo1 {
-    width: 500px;
-    height: 600px;
-    flex-basis: 40%;
-  }
+.photo {
+  width: 95%;
+  height: auto;
 }
 
-.aboutme-photo2 {
-  background-image: url(/images/veronika_geek.jpg);
-  width: 90%;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-@media (min-width: 1000px) {
-  .aboutme-photo2 {
-    width: 500px;
-    height: 600px;
-    flex-basis: 40%;
+@media (max-width: 600px) {
+  .alternative-position {
+    order: 2;
   }
 }
 
@@ -427,7 +405,27 @@ header {
   }
 }
 
-.photo {
-  width: 500px;
-  height: auto;
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .contact {
+    align-items: center;
+  }
+}
+
+.contact__methods {
+  margin: 10px 0 10px 5px;
+}
+@media (min-width: 1000px) {
+  .contact__methods {
+    margin: 20px auto;
+  }
+}
+
+.contact__icon {
+  width: 50px;
+  width: 50px;
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */
