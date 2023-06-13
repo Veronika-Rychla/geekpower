@@ -4,35 +4,66 @@
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 95%;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1300px) {
+    width: 70%;
+  }
 }
 
 .hero__title {
   text-align: center;
-  font-size: 36px;
+  font-size: 3rem;
+
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 5rem;
+  }
 }
 
 .hero__subtitle {
   text-align: center;
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
 .hero__text {
   text-align: center;
-  padding: 60px;
+  padding: 20px 10px;
   font-style: italic;
-  font-size: 32px;
+  font-size: 1.7rem;
+
+  @media (min-width: 768px) {
+    padding: 30px 20px;
+  }
+  @media (min-width: 1300px) {
+    padding: 60px;
+  }
 }
 
 .hero__button {
   padding: 1rem;
   background-color: base.$color-buttons;
   border-radius: 30px;
-  width: 90%;
+
   text-align: center;
   align-self: center;
+
+  &:hover {
+    background-color: base.$color-text-links;
+  }
 }
 
 .hero__button a {
@@ -45,11 +76,19 @@
   width: 80%;
   height: auto;
   line-height: 25px;
-  padding: 2rem;
+  padding: 30px;
   background-color: base.$color-buttons;
   border-radius: 15px;
   text-align: center;
   align-self: center;
+
+  &:hover {
+    background-color: base.$color-text-links;
+  }
+
+  @media (min-width: 1300px) {
+    width: 50%;
+  }
 }
 
 .guarantee__button a {
@@ -58,16 +97,22 @@
   color: base.$color-text-primary;
 }
 
-@media (min-width: 768px) {
-  .hero-wrapper {
-    width: 90%;
-  }
+.hero__subheading {
+  font-size: 2.5rem;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
 
-  .hero__title {
-    font-size: 5rem;
+  @media (min-width: 768px) {
+    font-size: 3rem;
   }
+}
 
-  .hero__button {
-    width: 40%;
+.hero__link {
+  color: base.$color-text-links;
+  text-decoration: none;
+
+  &:hover {
+    color: base.$color-buttons;
   }
 }

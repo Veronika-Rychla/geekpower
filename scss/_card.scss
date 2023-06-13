@@ -10,8 +10,21 @@
   border-radius: 10px;
   padding: 30px;
   margin: 30px;
-  width: 100%;
+  width: 95%;
   align-self: center;
+
+  @media (min-width: 768px) {
+    width: 90%;
+    padding: 40px;
+  }
+
+  @media (min-width: 900px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1300px) {
+    flex-direction: row;
+  }
 }
 
 .card__title {
@@ -23,30 +36,44 @@
 .card__text {
   color: white;
   text-align: justify;
+  flex-basis: 65%;
+
+  @media (min-width: 1000px) {
+    margin-left: 15px;
+  }
+}
+
+.card__image {
+  flex-basis: 35%;
 }
 
 .card__image img {
-  width: 100%;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+
+  @media (min-width: 1300px) {
+    width: 300px;
+    height: auto;
+  }
+
+  @media (min-width: 1600px) {
+    width: 350px;
+    height: auto;
+  }
 }
 
 .card a {
   color: base.$color-text-links;
   text-decoration: none;
-}
+  padding-left: 20px;
+  text-align: left;
 
-@media (min-width: 768px) {
-  .card {
-    flex-direction: row;
-    width: 60%;
-    padding: 40px;
-  }
-
-  .card__image {
-    width: 70%;
-    padding-right: 30px;
-  }
-
-  .card__image img {
-    width: 100%;
+  &:hover {
+    color: base.$color-buttons;
   }
 }
