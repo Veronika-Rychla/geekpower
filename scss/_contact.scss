@@ -1,9 +1,25 @@
+@use 'base';
+
 .contact {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 768px) {
     align-items: center;
+  }
+}
+
+.contact-text {
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    margin: 20px 40px;
+  }
+
+  @media (min-width: 1500px) {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
@@ -15,8 +31,35 @@
   }
 }
 
+.contact__methods:last-child {
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1300px) {
+    margin-bottom: 60px;
+  }
+}
+
 .contact__icon {
-  width: 50px;
-  width: 50px;
+  width: 40px;
+  width: 40px;
   margin-right: 20px;
+
+  @media (min-width: 768px) {
+    width: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+}
+
+.contact-link {
+  color: base.$color-text-links;
+  text-decoration: none;
+
+  &:hover {
+    color: base.$color-buttons;
+  }
 }

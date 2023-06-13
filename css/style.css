@@ -29,9 +29,9 @@ h2 {
 }
 
 .page-heading {
-  margin: 30px 20px;
-  text-align: left;
-  font-size: 2rem;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 3rem;
 }
 @media (min-width: 600px) {
   .page-heading {
@@ -135,6 +135,7 @@ header {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    padding: 0;
   }
   .nav-item {
     margin: 16px 0;
@@ -146,6 +147,7 @@ header {
 .footer {
   background-color: #1e1e1e;
   padding: 20px;
+  width: 100%;
   text-align: center;
 }
 
@@ -356,10 +358,15 @@ header {
   flex-direction: column;
   padding: 20px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .aboutme-wrapper {
     flex-direction: row;
     margin: 40px auto;
+    width: 85%;
+  }
+}
+@media (min-width: 1800px) {
+  .aboutme-wrapper {
     width: 60%;
   }
 }
@@ -408,10 +415,26 @@ header {
 .contact {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .contact {
     align-items: center;
+  }
+}
+
+.contact-text {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .contact-text {
+    margin: 20px 40px;
+  }
+}
+@media (min-width: 1500px) {
+  .contact-text {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
@@ -424,8 +447,37 @@ header {
   }
 }
 
+.contact__methods:last-child {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .contact__methods:last-child {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1300px) {
+  .contact__methods:last-child {
+    margin-bottom: 60px;
+  }
+}
+
 .contact__icon {
-  width: 50px;
-  width: 50px;
+  width: 40px;
+  width: 40px;
   margin-right: 20px;
+}
+@media (min-width: 768px) {
+  .contact__icon {
+    width: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+}
+
+.contact-link {
+  color: #9b72cf;
+  text-decoration: none;
+}
+.contact-link:hover {
+  color: #532b88;
 }/*# sourceMappingURL=style.css.map */
