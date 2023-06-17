@@ -444,6 +444,14 @@ header {
   background-color: red;
 }
 
+.timetable__slot--reserved {
+  background-color: orange;
+}
+
+.timetable__colours {
+  text-align: center;
+}
+
 .aboutme-wrapper {
   display: flex;
   flex-direction: column;

@@ -20,13 +20,22 @@ title: Geek Power - Rezervace a ceník
     <li>užitečné study skills strategie</li>
   </ul>
   <p>
-    <a href="termsandconditions"
+    <a href="/termsandconditions"
       >Obchodní podmínky transparentně a srozumitelně</a
     >
   </p>
 </div>
 
 <h2>Přehled volných slotů</h2>
+<p class="timetable__colours">
+  <span class="timetable__slot">Zelená</span> = volný termín
+</p>
+<p class="timetable__colours">
+  <span class="timetable__slot--reserved">Oranžová</span> = předběžná rezervace
+</p>
+<p class="timetable__colours">
+  <span class="timetable__slot--taken">Červená</span> = již zabraný termín
+</p>
 
 <table class="timetable">
   <tr>
@@ -38,31 +47,31 @@ title: Geek Power - Rezervace a ceník
   </tr>
   <tr>
     <th class="timetable__hours">09:00</th>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--reserved">O</td>
+    <td class="timetable__slot--reserved">free</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
   </tr>
   <tr>
     <th class="timetable__hours">10:00</th>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--reserved">O</td>
+    <td class="timetable__slot--reserved">free</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
   </tr>
   <tr>
     <th class="timetable__hours">11:00</th>
+    <td class="timetable__slot--reserved">O</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--taken">X</td>
   </tr>
   <tr>
     <th class="timetable__hours">12:00</th>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--taken">X</td>
   </tr>
   <tr>
     <th class="timetable__hours">13:00</th>
@@ -76,7 +85,7 @@ title: Geek Power - Rezervace a ceník
     <td class="timetable__slot">free</td>
     <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--taken">X</td>
   </tr>
   <tr>
     <th class="timetable__hours">15:00</th>
@@ -94,21 +103,14 @@ title: Geek Power - Rezervace a ceník
   </tr>
   <tr>
     <th class="timetable__hours">17:00</th>
+    <td class="timetable__slot--reserved">O</td>
     <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--reserved">O</td>
+    <td class="timetable__slot--reserved">O</td>
   </tr>
   <tr>
     <th class="timetable__hours">18:00</th>
-    <td class="timetable__slot">free</td>
-    <td class="timetable__slot--taken">X</td>
-    <td class="timetable__slot--taken">X</td>
-    <td class="timetable__slot">free</td>
-  </tr>
-  <tr>
-    <th class="timetable__hours">19:00</th>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--reserved">O</td>
     <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot--taken">X</td>
