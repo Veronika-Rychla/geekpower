@@ -1,0 +1,100 @@
+@use 'base';
+
+.lesson__mainheading {
+  text-align: center;
+}
+
+.lesson__subheading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.lesson_paragraph {
+  width: 95%;
+  margin: 20px auto;
+
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+
+  @media (min-width: 1000px) {
+    width: 70%;
+  }
+  @media (min-width: 1500px) {
+    width: 60%;
+  }
+}
+
+.examples {
+  font-style: italic;
+}
+
+.example-underlined {
+  font-weight: 600;
+  color: #9b72cf;
+}
+
+.lesson__big-photo {
+  width: 90%;
+  height: auto;
+  display: block;
+
+  @media (min-width: 1000px) {
+    width: 80%;
+    margin: 15px auto;
+  }
+
+  @media (min-width: 1600px) {
+    width: 60%;
+  }
+}
+
+.lesson__button {
+  width: 70%;
+  height: auto;
+  line-height: 25px;
+  padding: 30px;
+  background-color: base.$color-buttons;
+  border-radius: 15px;
+  text-align: center;
+  align-self: center;
+  margin: 5px auto;
+
+  &:hover {
+    background-color: base.$color-text-links;
+  }
+
+  @media (min-width: 1300px) {
+    width: 50%;
+  }
+}
+
+.lesson__button a {
+  text-decoration: none;
+  display: block;
+  color: base.$color-text-primary;
+}
+
+.lesson__image {
+  display: block;
+  margin: 5px auto;
+  width: 90%;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1000px) {
+    width: 60%;
+  }
+
+  @media (min-width: 1500px) {
+    width: 40%;
+  }
+}
+
+.lesson__video {
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+}
