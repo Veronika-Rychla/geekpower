@@ -848,4 +848,27 @@ header {
   margin: 5px auto;
   display: flex;
   justify-content: center;
+}
+
+.reading__text {
+  font-style: italic;
+  padding: 20px;
+  width: 95%;
+  margin: 20px auto;
+}
+@media (min-width: 768px) {
+  .reading__text {
+    width: 90%;
+  }
+}
+@media (min-width: 1000px) {
+  .reading__text {
+    width: 70%;
+    padding: 40px;
+  }
+}
+@media (min-width: 1500px) {
+  .reading__text {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */

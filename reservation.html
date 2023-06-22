@@ -12,7 +12,7 @@ title: Geek Power - Rezervace a ceník
   <span class="price-card__price">🔥 500 Kč 🔥</span>
   <ul class="price-card_list">
     <p>Balíček zahrnuje:</p>
-    <li>50-minutovou konverzační lekci přímé výuky jednou týdně</li>
+    <li>jednu 50-minutovou konverzační lekci přímé výuky</li>
     <li>slovíčka pro daný týden ve formátu pro SRS</li>
     <li>výklad a interaktivní gramatická cvičení</li>
     <li>doporučená videa k poslechu</li>
@@ -47,28 +47,28 @@ title: Geek Power - Rezervace a ceník
   </tr>
   <tr>
     <th class="timetable__hours">09:00</th>
-    <td class="timetable__slot--reserved">O</td>
-    <td class="timetable__slot--reserved">free</td>
+    <td class="timetable__slot--taken">X</td>
+    <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
   </tr>
   <tr>
     <th class="timetable__hours">10:00</th>
     <td class="timetable__slot--reserved">O</td>
-    <td class="timetable__slot--reserved">free</td>
+    <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
   </tr>
   <tr>
     <th class="timetable__hours">11:00</th>
-    <td class="timetable__slot--reserved">O</td>
+    <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot--taken">X</td>
   </tr>
   <tr>
     <th class="timetable__hours">12:00</th>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--reserved">O</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot--taken">X</td>
@@ -82,31 +82,31 @@ title: Geek Power - Rezervace a ceník
   </tr>
   <tr>
     <th class="timetable__hours">14:00</th>
-    <td class="timetable__slot">free</td>
     <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot">free</td>
+    <td class="timetable__slot--reserved">O</td>
     <td class="timetable__slot--taken">X</td>
   </tr>
   <tr>
     <th class="timetable__hours">15:00</th>
-    <td class="timetable__slot">free</td>
     <td class="timetable__slot--taken">X</td>
+    <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
   </tr>
   <tr>
     <th class="timetable__hours">16:00</th>
-    <td class="timetable__slot">free</td>
+    <td class="timetable__slot--reserved">O</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
     <td class="timetable__slot">free</td>
   </tr>
   <tr>
     <th class="timetable__hours">17:00</th>
+    <td class="timetable__slot--taken">X</td>
     <td class="timetable__slot--reserved">O</td>
-    <td class="timetable__slot">free</td>
     <td class="timetable__slot--reserved">O</td>
-    <td class="timetable__slot--reserved">O</td>
+    <td class="timetable__slot--taken">X</td>
   </tr>
   <tr>
     <th class="timetable__hours">18:00</th>
@@ -117,7 +117,16 @@ title: Geek Power - Rezervace a ceník
   </tr>
 </table>
 
-<h2 id="calendry">Rezervujte si první lekci přes Calendry</h2>
+<h2 id="calendry">Rezervujte si první lekci přes Calendly</h2>
+<p class="timetable__colours">
+  Možnost rezervace první hodiny uvolňuji vždy na jeden týden dopředu, aby
+  nevznikaly konflikty.
+</p>
+<p class="timetable__colours">
+  <span class="timetable__slot--taken"
+    >Kapacita na pondělí je prozatím zcela naplněna.</span
+  >
+</p>
 <div class="guarantee__button">
   <a href="/termsandconditions">
     Garance vrácení peněz, pokud po první lekci nebudete chtít pokračovat! 🙏</a
