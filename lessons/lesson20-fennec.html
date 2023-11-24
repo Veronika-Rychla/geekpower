@@ -1,0 +1,208 @@
+---
+layout: main-template.njk
+title: Geek Power - Lesson 20
+---
+
+<h1 class="lesson__mainheading">Lesson 20</h1>
+<h2 class="lesson__subheading">
+  <span class="brand__power">Grammar</span> - Podmínky nereálné
+</h2>
+
+<h2 class="lesson__subheading">
+  <span class="brand__power">Listening</span> - If/else statements
+</h2>
+
+<div class="iframe-container-wrapper">
+  <div class="iframe-container">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/HQ3dCWjfRZ4?si=XdTEMVqq-bqvYC4w"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+<div class="reading__text">
+  <p>
+    Let's talk about conditional statements. Conditional statements let us
+    perform actions based on if a condition is met. We use them to help direct
+    the behavior of our programs. In fact, we actually use conditional
+    statements in our everyday lives. Have you ever gone to a cafe but didn't
+    really know what you wanted to order? You've probably narrowed down what you
+    want, kind of like this: "Do I want something refreshing or something else?
+    If I want something refreshing, I guess I could get something like an iced
+    coffee or an iced tea. I guess I'll get some tea, but what flavor do I want?
+    Oh god, there's so many flavors to choose from. Am I feeling a little
+    adventurous, or should I pick something safe? Something tart, maybe
+    something citrusy, maybe strawberry. But can I even afford this? What am I
+    doing with my life? Do my parents even love me? Did I leave the oven on?"
+  </p>
+  <p>
+    Well, to help our indecisive mind figure out what we want, we can use
+    something called a flowchart. Flowcharts help us plan and visualize the
+    different outcomes in our program. Looking back at our cafe scenario, we can
+    use a flowchart to figure out what we want to get. First, we ask ourselves,
+    "Do we want something refreshing?" If not, "Do we want something hot?" If we
+    do, then we'll get a smoothie, but if not, we'll just not get anything at
+    all and go home. But if we choose to get a refreshing drink, then we ask
+    ourselves, "Do you want tea?" If not, then we'll get an iced coffee. But if
+    I do want tea, then do I want raspberry? If we do, then great, we'll get
+    raspberry, but if not, we'll just get some kiwi-flavored tea instead.
+  </p>
+  <p>
+    In programming, you can represent these decisions with what's known as an if
+    statement. An if statement is a conditional statement where if the condition
+    is met, then an action happens. So, if I'm in the mood for something
+    refreshing, then I'll order a fruity drink. Now that we have an idea of what
+    an if statement is, let's see how we go about writing one.
+  </p>
+  <p>
+    As a disclaimer, even though writing an if statement is pretty much the same
+    in most modern languages, it's important to check your specific language to
+    make sure you didn't miss anything. In this case, we're using the language
+    Java, but this would also work for the languages C, C++, C#, and JavaScript.
+  </p>
+  <p>
+    Anyways, back to the video. We start an if statement by simply putting the
+    word "if" at the beginning of two parentheses. Then you would follow up with
+    a condition. A condition is something that we check to see if it's true, and
+    if it is, the computer will execute whatever's inside our little curly
+    brackets. Like, is three greater than two? It is, so it'll execute the code,
+    and if it's not true, then the computer will just continue reading through
+    your code and ignore whatever you wrote here between the brackets. Voila!
+    What are some ways we can check our condition?
+  </p>
+  <p>
+    I'm glad you asked, Kevin. The way we check to see if our condition is true
+    is by using comparison operators. These comparison operators are exactly
+    what you'd see in your elementary class. Get out and shut up, we got the
+    less than, the greater than, and well, you know the rest. And in
+    programming, we write these symbols a little differently. Notice how "equals
+    to" has two equal signs. This is because only using one equal sign means
+    you're assigning values to a variable. So here, we're saying A is equal to
+    3, and B is equal to 3. But when you use two equal signs, you're checking to
+    see if the left side is equal to the right side. And if you want to check
+    that something is not equal to something else, an exclamation point is a
+    universal way in programming to represent the word "not." So, putting an
+    exclamation point in front of an equal sign means "not equal to."
+    Technically, the exclamation point itself is kind of another operator, but
+    we'll get to that in a moment.
+  </p>
+  <p>
+    So now that we know how if statements and conditions work, we can look at an
+    example. So let's say a drink costs $4.95, I currently have $5.75, and I
+    currently don't have a drink. But going into our conditional, since the
+    money I do have is more than $4.95, now I can have a drink. But let's say
+    you want to check for two conditions in the same if statement, like "Do I
+    have enough money, and do they have the flavor I want?" In that case, you
+    can combine conditions with what's known as a logical operator.
+  </p>
+  <p>
+    Logical operators are simply the words "and," "or," and "not." The nice
+    thing is they work exactly how you would expect them to in plain English.
+    So, if I want to check if two conditions are both true, we would use the
+    word "and," which is represented by two ampersands, you know, those little
+    squiggly boys. So, looking at this example, I want to check if I have more
+    than $4.95 and that my favorite flavor is in stock. Since they are both
+    true, the computer will run the code inside the if statement. But let's say
+    we only have $3.50. $3.50 is less than $4.95, which makes this condition
+    false. Even though they have the drink we want, "and" requires both
+    conditions to be true to run the code. So, since we have one condition that
+    failed, the computer will ignore what's inside of our if statement and
+    continue on with our program.
+  </p>
+  <p>
+    If we want to check to see if at least one of the conditions is true, we
+    would use the "or" operator, which is represented by two straight lines. So,
+    if I have more than $4.95, or the cafe has the flavor I want in stock, I'll
+    buy a drink. So, only one condition needs to be true to execute the code,
+    and if both fail, then the computer ignores the stuff inside and continues
+    on with your program. And lastly, we can check if our condition is not true
+    by using the "not" operator. As we mentioned earlier, the exclamation point
+    is the universal way of representing the word "not." So, if we put the
+    exclamation point in front of the condition, we can check that if our
+    condition is not true.
+  </p>
+  <p>
+    So, we know that if statements check if our conditions are true. Without the
+    exclamation point, our if statement would check to see if our money is
+    greater than or equal to $4.95, then do whatever's inside the curly braces.
+    But let's say I only have 75 cents, and I want something to happen if I
+    don't have enough money. If we put an exclamation point, now the if
+    statement can check to see if our condition is not true and then proceed to
+    the code inside the curly braces. So, in this case, if we don't have enough
+    money, then our mood is set to sad.
+  </p>
+  <p>
+    Anyway, that's it when it comes to if statements by themselves. To recap, if
+    statements just check to see if something is true, then, if it is, it'll
+    execute some code. What, uh, what if you want something to happen if your if
+    statement fails? Well, I'm glad you asked, Kevin. You would handle this with
+    what's called an else statement. You attach this to the end of your if
+    statement as a default action if your condition doesn't pass. Take a look.
+    So, if we have more than $4.95, then our mood is happy, else we'll be sad.
+    But let's say you have a few different decisions to make, like, for example,
+    Kevin here wants something fruity if it's available, but if it's not, then
+    he'll get a smoothie, and if they're out of that too, he'll just get a
+    water. Well, if we write this with three different if statements, look what
+    happens. Fruity is available, so great, we can get that. But now our code
+    continues, and now we've also bought a smoothie, and we've also gotten a
+    water since they're all available. Now we've got all these drinks that we
+    didn't want.
+  </p>
+  <p>
+    To avoid this, we can combine if and else statements to make something
+    called an else if statement. That way, if our first condition is met, in
+    this case, we get something fruity, our code will stop there, and we won't
+    have to buy everything else. But if our condition doesn't succeed, then
+    it'll continue down the rest of the else if statements until one of them
+    passes.
+  </p>
+  <p>
+    So, that's if statements in a nutshell. Now, let's put all this information
+    together with a couple of examples. So, this is Blub Junior. As Blubs get
+    older, they get bigger, so we can give them size categories based on their
+    age here. Blub Junior's age is three. So, looking at our first if statement,
+    we see that if his age is less than or equal to 3, he'll be classified as a
+    small Blub, and the program will skip the other two conditions.
+  </p>
+  <p>
+    But let's say he gets older, and his age is now set to 12. Since 12 is
+    greater than 3, our first condition will fail, and our program will move on
+    to the second condition. Now, since Blub's age is between 3 and 15, our
+    condition here will pass, and now Blub is classified as a medium Blub. And
+    finally, let's say Blub is all grown up at the age of 21. Since 21 is
+    greater than 3, our program will skip the first condition and move on to
+    condition 2. Looking at our condition here, we see that even though 21 is
+    greater than 3, it's not less than 15. And since our AND operator requires
+    both conditions to be true, this condition will fail as well. Since neither
+    of these conditions passed, we're left with our else statement, which will
+    let us take care of any other age that isn't handled by the other two
+    conditions, making this Blub a big boy.
+  </p>
+  <p>
+    Now, here's a more complex example with an if statement inside of an if
+    statement. We want to identify our mysterious Blub. We first check if our
+    color is white. It is, so we go inside our curly braces. But now, we see
+    there's another if statement nested inside our other one. Nested if
+    statements help us get more specific with checking our data. In this case,
+    we can get more specific information about our mysterious Blub. If they're a
+    white female Blub, then this Blub is identified as Blephet. If both are not,
+    then it's identified as Mr. Blub. And if our mysterious Blub isn't even
+    white, then they're probably Kevin.
+  </p>
+</div>
+
+<h2 class="lesson__subheading">
+  <span class="brand__power">Writing</span> - Kdybych jen (býval) byl...
+</h2>
+<p class="lesson_paragraph">
+  📝 Napište 5 vět s použitím Second Conditional a 5 vět s použitím Third
+  Conditional. 💪
+</p>
+<p class="lesson_paragraph example">🧩</p>
+<p class="lesson_paragraph example">🧩</p>
+<p class="lesson_paragraph example">🧩</p>
