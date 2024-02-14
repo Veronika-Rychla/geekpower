@@ -885,6 +885,15 @@ header {
   color: #f4effa;
 }
 
+.lesson__link {
+  text-decoration: none;
+  color: #9b72cf;
+}
+
+.lesson__link:hover {
+  color: #532b88;
+}
+
 .lesson__image {
   display: block;
   margin: 5px auto;

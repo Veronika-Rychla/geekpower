@@ -94,6 +94,15 @@
   color: base.$color-text-primary;
 }
 
+.lesson__link {
+  text-decoration: none;
+  color: base.$color-text-links;
+}
+
+.lesson__link:hover {
+  color: base.$color-buttons;
+}
+
 .lesson__image {
   display: block;
   margin: 5px auto;
